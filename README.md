@@ -1,54 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jeu de Snake</title>
-<style>
-    body {
-        background-color: #D8BFD8;
-        font-family: "Comic Sans MS", sans-serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
+    <meta charset="UTF-8">
+    <title>Jeu</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #D8BFD8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Comic Sans MS", cursive;
+        }
 
-    h1 {
-        font-size: 60px;
-        margin-bottom: 50px;
-    }
+        button {
+            font-size: 24px;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 12px;
+            background-color: #8b5cf6;
+            color: white;
+            cursor: pointer;
+        }
 
-    .button {
-        padding: 20px 40px;
-        font-size: 20px;
-        cursor: pointer;
-        border: none;
-        border-radius: 10px;
-        background-color: #32CD32;
-        color: white;
-        transition: transform 0.2s;
-    }
-
-    .button:hover {
-        transform: scale(1.1);
-    }
-</style>
+        button:hover {
+            background-color: #7c3aed;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Jeu de Snake</h1>
+    <button onclick="startGame()">Commencer le jeu</button>
 
-<button class="button" onclick="openSnake()">Commencer le jeu</button>
-
-<script>
-    function openSnake() {
-        // Ouvre le jeu dans un nouvel onglet
-        window.open("https://www.google.com", "_blank");
-    }
-</script>
+    <script>
+        function startGame() {
+            // Ouvre ton jeu (HTML)
+            window.location.href = "snake.html";
+        }
+    </script>
 
 </body>
 </html>
+
